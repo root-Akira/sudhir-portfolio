@@ -22,7 +22,7 @@ export default function Hero() {
         <img
           ref={imgRef}
           className={`hero-portrait${loaded ? ' is-loaded' : ''}`}
-          src="/sudhir-portrait.jpg"
+          src={`${import.meta.env.BASE_URL}sudhir-portrait.jpg`}
           alt="Black and white portrait of Sudhir Tiwari"
           onLoad={() => setLoaded(true)}
           onError={() => setLoaded(true)}
